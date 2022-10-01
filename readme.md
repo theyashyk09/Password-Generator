@@ -6,6 +6,10 @@ This is a password generator developed using html, css and javascript which gene
 
 ## Video
 
+https://user-images.githubusercontent.com/109405477/193412183-9b5193e4-1e3a-4be2-9507-f0296f8460c0.mp4
+
+
+
 **Check it out at : https://passgenow.netlify.app/**
 
 ## 🚀 About Me
