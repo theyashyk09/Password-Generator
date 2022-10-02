@@ -69,13 +69,17 @@ generateEl.addEventListener("click", () => {
 clipboardEl.addEventListener("click", () => {
   navigator.clipboard.writeText(resultEl.textContent);
 
-  setTimeout(() => {
-    copied.textContent = "Password Copied ✔";
-    copied.style.display = "block";
-  }, 100);
+  if (!resultEl.textContent) {
+    return;
+  } else {
+    setTimeout(() => {
+      copied.textContent = "Password Copied ✔";
+      copied.style.display = "block";
+    }, 100);
 
-  setTimeout(() => {
-    copied.style.display = "none";
-    resultEl.textContent = "";
-  }, 1200);
+    setTimeout(() => {
+      copied.style.display = "none";
+      resultEl.textContent = "";
+    }, 1200);
+  }
 });
